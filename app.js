@@ -118,7 +118,12 @@ function checkout() {
   });
   const total = cart.reduce((sum, row) => sum + (products.find(item => item.id === row.id)?.price || 0) * row.qty, 0);
   const order = `Здравствуйте! Хочу оформить заказ в Evgeniy Apple.\n\n${lines.join('\n')}\n\nИтого: ${money(total)}\n\nИмя: \nТелефон: \nСпособ получения: `;
-  navigator.clipboard?.writeText(order).then(() => showToast('Текст заказа скопирован — вставьте его в Telegram')).catch(() => showToast('Telegram открыт. Скопируйте состав заказа вручную.'));
+  const copyPromise = navigator.clipboard?.writeText(order);
+  if (copyPromise) {
+    copyPromise.then(() => showToast('Текст заказа скопирован — вставьте его в Telegram')).catch(() => showToast('Telegram открыт. Скопируйте состав заказа вручную.'));
+  } else {
+    showToast('Telegram открыт. Скопируйте состав заказа вручную.');
+  }
   window.open(TELEGRAM_ORDER_URL, '_blank', 'noopener,noreferrer');
 }
 
