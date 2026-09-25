@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#070707" />
+    <meta name="description" content="Evgeniy Apple — оригинальная техника и премиальный сервис в Минске." />
+    <title>Evgeniy Apple — Original Tech Store</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <header class="site-header" id="site-header">
+      <a class="brand" href="#top" aria-label="Evgeniy Apple">
+        <img src="./assets/logo-full.png" alt="Evgeniy Apple" />
+      </a>
+      <nav class="desktop-nav" aria-label="Основная навигация">
+        <a href="#catalog">Каталог</a>
+        <a href="#about">О магазине</a>
+        <a href="#trade-in">Trade-in</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <div class="header-actions">
+        <a class="header-social" href="https://t.me/evgeniy_apple_minsk" target="_blank" rel="noreferrer">TG</a>
+        <button class="cart-trigger" id="cart-trigger" aria-label="Открыть корзину">
+          Корзина <span id="cart-count">0</span>
+        </button>
+      </div>
+      <button class="menu-trigger" id="menu-trigger" aria-label="Открыть меню"><span></span><span></span></button>
+      <div class="mobile-menu" id="mobile-menu">
+        <a href="#catalog">Каталог</a>
+        <a href="#about">О магазине</a>
+        <a href="#trade-in">Trade-in</a>
+        <a href="#contacts">Контакты</a>
+        <a href="https://www.instagram.com/evgeniy_apple?stkn=MXFseW9ob3o4dWwzcg==" target="_blank" rel="noreferrer">Instagram</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <video class="hero-video" autoplay muted loop playsinline poster="./assets/iphone-black.jpg">
+          <source src="./assets/hero-enhanced.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-shade"></div>
+        <div class="hero-grid"></div>
+        <div class="hero-copy">
+          <p class="eyebrow reveal">MINSK / ORIGINAL TECH</p>
+          <h1 class="reveal delay-1">Добро<br /><em>пожаловать</em></h1>
+          <p class="hero-note reveal delay-2">Техника, которую выбирают за качество.<br />Сервис, который запоминают.</p>
+          <a class="button button-3d reveal delay-3" href="#catalog">В магазин <span>↗</span></a>
+        </div>
+        <div class="hero-scroll">SCROLL TO EXPLORE <i></i></div>
+        <div class="hero-corner">EA<br /><span>EST. 2024</span></div>
+      </section>
+
+      <div class="ticker" aria-label="Преимущества">
+        <div class="ticker-track">
+          ОРИГИНАЛЬНАЯ ТЕХНИКА <b>✦</b> ПРОВЕРКА ПЕРЕД ПОКУПКОЙ <b>✦</b> ДОСТАВКА ПО МИНСКУ <b>✦</b> ГАРАНТИЯ <b>✦</b> TRADE-IN <b>✦</b>
+          ОРИГИНАЛЬНАЯ ТЕХНИКА <b>✦</b> ПРОВЕРКА ПЕРЕД ПОКУПКОЙ <b>✦</b> ДОСТАВКА ПО МИНСКУ <b>✦</b> ГАРАНТИЯ <b>✦</b> TRADE-IN <b>✦</b>
+        </div>
+      </div>
+
+      <section class="intro section" id="about">
+        <div class="section-label reveal"><span>01</span> THE EA STANDARD</div>
+        <div class="intro-content">
+          <h2 class="display reveal">Технологии,<br /><span>выбранные лично.</span></h2>
+          <div class="intro-text reveal delay-1">
+            <p>Evgeniy Apple — магазин оригинальной техники в Минске. Здесь устройства проходят проверку до того, как попадут к вам.</p>
+            <a href="#catalog" class="text-link">Исследовать коллекцию <span>↗</span></a>
+          </div>
+        </div>
+        <div class="feature-line reveal delay-2">
+          <div><strong>01</strong><span>Оригинальная<br />техника</span></div>
+          <div><strong>02</strong><span>Проверка<br />перед покупкой</span></div>
+          <div><strong>03</strong><span>Доставка<br />по Минску</span></div>
+          <div><strong>04</strong><span>Поддержка<br />после покупки</span></div>
+        </div>
+      </section>
+
+      <section class="iphone-scene section" aria-label="Коллекция iPhone">
+        <div class="scene-orbit"></div>
+        <div class="scene-copy reveal">
+          <p class="eyebrow">THE NEW STANDARD</p>
+          <h2>Форма.<br /><em>Материал.</em><br />Характер.</h2>
+          <p>Каждая деталь имеет значение. Листайте дальше — изображения двигаются вместе со скроллом.</p>
+        </div>
+        <div class="phone-card phone-card-one parallax tilt" data-depth="-0.12">
+          <img src="./assets/iphone-black.jpg" alt="Тёмный iPhone крупным планом" />
+          <span>01 / TITANIUM BLACK</span>
+        </div>
+        <div class="phone-card phone-card-two parallax tilt" data-depth="0.2">
+          <img src="./assets/iphone-silver.jpg" alt="Серебристый iPhone" />
+          <span>02 / NATURAL TITANIUM</span>
+        </div>
+        <div class="phone-card phone-card-three parallax tilt" data-depth="-0.24">
+          <img src="./assets/iphone-burgundy.jpg" alt="Бордовый iPhone" />
+          <span>03 / DEEP BURGUNDY</span>
+        </div>
+        <div class="scene-side-label">SCROLL / 3D GALLERY</div>
+      </section>
+
+      <section class="catalog section" id="catalog">
+        <div class="section-head reveal">
+          <div>
+            <div class="section-label"><span>02</span> CURATED DEVICES</div>
+            <h2 class="display">В центре<br /><span>внимания.</span></h2>
+          </div>
+          <p class="section-description">Подобрали устройства, которые отвечают вашему ритму жизни — от флагманов до ежедневных компаньонов.</p>
+        </div>
+        <div class="filter-row reveal" id="filter-row">
+          <button class="filter active" data-filter="all">Все</button>
+          <button class="filter" data-filter="Смартфоны">Смартфоны</button>
+          <button class="filter" data-filter="Ноутбуки">Ноутбуки</button>
+          <button class="filter" data-filter="Аксессуары">Аксессуары</button>
+        </div>
+        <div class="products-grid" id="products-grid"></div>
+      </section>
+
+      <section class="trade-in section" id="trade-in">
+        <div class="trade-glow"></div>
+        <div class="trade-content reveal">
+          <div class="section-label"><span>03</span> SMART EXCHANGE</div>
+          <h2 class="display">Старое устройство.<br /><span>Новый опыт.</span></h2>
+          <p>Оценим вашу технику и зачтём её стоимость при покупке нового устройства.</p>
+          <button class="button" id="trade-open">Рассчитать Trade-in <span>↗</span></button>
+        </div>
+        <div class="trade-device parallax" data-depth="0.1"><div class="device-screen">EA</div></div>
+        <div class="trade-number">TRADE<br /><em>IN</em></div>
+      </section>
+
+      <section class="logos section reveal" aria-label="Бренды">
+        <div class="section-label"><span>04</span> BRANDS WE TRUST</div>
+        <div class="logo-wall">
+          <img src="./assets/logo-mark.png" alt="EA" />
+          <div>APPLE</div><div>SAMSUNG</div><div>DYSON</div><div>SONY</div><div>BOSE</div>
+        </div>
+      </section>
+
+      <section class="director section" id="contacts">
+        <div class="director-photo reveal"><img src="./assets/director.jpg" alt="Евгений, директор Evgeniy Apple" /></div>
+        <div class="director-copy reveal delay-1">
+          <div class="section-label"><span>05</span> THE PERSON BEHIND EA</div>
+          <h2 class="display">Выбираю<br /><span>как для себя.</span></h2>
+          <p>«Моя задача — чтобы после покупки вы были уверены не только в устройстве, но и в своём выборе».</p>
+          <div class="signature">Evgeniy Apple</div>
+          <strong>Евгений А.</strong>
+          <small>Директор магазина</small>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-top">
+        <img src="./assets/logo-full.png" alt="Evgeniy Apple" class="footer-logo" />
+        <div class="footer-cta">
+          <p>Остались вопросы?</p>
+          <a class="button" href="https://t.me/evgeniy_apple_minsk" target="_blank" rel="noreferrer">Написать в Telegram <span>↗</span></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2024–2026 EVGENIY APPLE</div>
+        <div class="footer-links">
+          <a href="https://www.instagram.com/evgeniy_apple?stkn=MXFseW9ob3o4dWwzcg==" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="https://t.me/evgeniy_apple_minsk" target="_blank" rel="noreferrer">Telegram</a>
+        </div>
+        <a class="admin-link" href="#admin" id="admin-link">admin</a>
+      </div>
+    </footer>
+
+    <aside class="cart-drawer" id="cart-drawer" aria-label="Корзина">
+      <div class="drawer-head"><div><span class="eyebrow">YOUR SELECTION</span><h3>Корзина</h3></div><button class="close-button" id="cart-close">×</button></div>
+      <div class="cart-items" id="cart-items"></div>
+      <div class="cart-empty" id="cart-empty"><span>◌</span><p>Здесь пока пусто.<br />Добавьте устройство из каталога.</p></div>
+      <div class="cart-footer">
+        <div><span>Итого</span><strong id="cart-total">0 BYN</strong></div>
+        <button class="button full" id="checkout-button">Оформить заказ <span>↗</span></button>
+        <small>После нажатия откроется Telegram. Текст заказа скопируется автоматически.</small>
+      </div>
+    </aside>
+    <div class="drawer-backdrop" id="drawer-backdrop"></div>
+
+    <div class="modal" id="product-modal" role="dialog" aria-modal="true">
+      <div class="modal-card" id="product-modal-content"></div>
+    </div>
+    <div class="modal" id="trade-modal" role="dialog" aria-modal="true">
+      <div class="modal-card trade-modal-card">
+        <button class="close-button modal-close">×</button>
+        <span class="eyebrow">TRADE-IN CALCULATOR</span>
+        <h3>Оцените старое устройство</h3>
+        <label>Устройство<select id="trade-device-select"><option>iPhone 13</option><option>iPhone 14 Pro</option><option>Samsung Galaxy S22</option><option>Другое устройство</option></select></label>
+        <label>Состояние<select id="trade-condition"><option value="1">Отличное</option><option value=".8">Хорошее</option><option value=".55">Есть следы использования</option></select></label>
+        <label>Примерная цена нового устройства<input id="trade-price" type="number" min="0" value="2500" /></label>
+        <div class="trade-result"><span>Ориентировочная скидка</span><strong id="trade-result">1 250 BYN</strong></div>
+        <button class="button full modal-close">Получить точную оценку <span>↗</span></button>
+      </div>
+    </div>
+    <div class="toast" id="toast"></div>
+
+    <section class="admin-view" id="admin-view" hidden>
+      <div class="admin-bg"></div>
+      <div class="admin-panel" id="admin-panel">
+        <a class="admin-back" href="#top">← Вернуться в магазин</a>
+        <div class="admin-login" id="admin-login">
+          <img src="./assets/logo-mark.png" alt="EA" />
+          <span class="eyebrow">PRIVATE AREA</span>
+          <h1>Администрирование</h1>
+          <p>Введите пароль, чтобы редактировать каталог.</p>
+          <form id="admin-login-form">
+            <input id="admin-password" type="password" placeholder="Пароль" autocomplete="current-password" required />
+            <button class="button full" type="submit">Войти <span>↗</span></button>
+          </form>
+          <small id="admin-error"></small>
+        </div>
+        <div class="admin-dashboard" id="admin-dashboard" hidden>
+          <div class="admin-heading"><div><span class="eyebrow">PRIVATE AREA / CATALOG</span><h1>Каталог</h1></div><button class="button" id="admin-logout">Выйти</button></div>
+          <form class="admin-product-form" id="admin-product-form">
+            <input type="hidden" id="admin-product-id" />
+            <input id="admin-product-name" placeholder="Название" required />
+            <input id="admin-product-category" placeholder="Категория" required />
+            <input id="admin-product-price" type="number" placeholder="Цена BYN" required />
+            <input id="admin-product-image" placeholder="Путь к изображению, например ./assets/iphone-black.jpg" required />
+            <button class="button" type="submit" id="admin-save-product">Добавить товар <span>+</span></button>
+          </form>
+          <div class="admin-products" id="admin-products"></div>
+        </div>
+      </div>
+    </section>
+    <script src="./app.js"></script>
+  </body>
+</html>
